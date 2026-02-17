@@ -13,12 +13,13 @@
   margin: 0;
   font-size: 1.1rem;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .tibia-prices-desc {
   margin: 0;
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #a3a3a3; /* neutral-400, matches docs */
 }
 
 .tibia-prices-row {
@@ -32,47 +33,31 @@
   width: 6rem;
   padding: 0.5rem 0.6rem;
   font-size: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.08);
-  color: inherit;
+  background: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
 }
 
 .tibia-prices-input:focus {
-  outline: 2px solid #646cff;
+  outline: 2px solid #10b981; /* emerald-500, matches docs */
   outline-offset: 1px;
 }
 
 .tibia-prices-suffix {
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  color: #d4d4d4; /* neutral-300 */
 }
 
 .tibia-prices-saved {
   margin: 0;
   font-size: 0.8rem;
-  color: #7cb342;
+  color: #34d399; /* emerald-400, matches docs accent */
 }
 
 .tibia-prices-hint {
   margin: 0;
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-@media (prefers-color-scheme: light) {
-  .tibia-prices-desc {
-    color: rgba(0, 0, 0, 0.65);
-  }
-  .tibia-prices-input {
-    border-color: rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.04);
-  }
-  .tibia-prices-suffix {
-    color: rgba(0, 0, 0, 0.75);
-  }
-  .tibia-prices-hint {
-    color: rgba(0, 0, 0, 0.5);
-  }
+  color: #737373; /* neutral-500, matches docs muted text */
 }

@@ -1,11 +1,13 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
+  font-family: var(--font-geist-mono);
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: dark;
+  color: #a3a3a3; /* neutral-400, matches docs */
+  background-color: #030303; /* neutral-950/black, matches docs */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,11 +18,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #10b981; /* emerald-500, matches docs accent */
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #34d399; /* emerald-400 */
 }
 
 body {
@@ -29,6 +31,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+::selection {
+  background-color: rgba(16, 185, 129, 0.3); /* emerald-500/30 */
+  color: #a7f3d0; /* emerald-200 */
 }
 
 h1 {
@@ -43,27 +50,31 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: rgba(255, 255, 255, 0.08);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px solid #10b981;
+  outline-offset: 1px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Custom scrollbar to match docs */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
 }
