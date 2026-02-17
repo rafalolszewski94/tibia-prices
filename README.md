@@ -1,3 +1,3 @@
-# WXT + React
+# Tibia Prices
 
-This template should help get you started developing with React in WXT.
+Tibia TC to PLN price converter for the character trade market — a browser extension that shows real-money (PLN) values next to Tibia Coins on the official character trade site.
